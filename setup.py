@@ -15,7 +15,9 @@ requires = [
     'pyramid == 1.2',
     'ujson',
     'pymongo >= 2.2',
-    'WebError'
+    'WebError',
+    'pyramid_debugtoolbar'
+
 ]
 
 setup(name='TrafMongo',

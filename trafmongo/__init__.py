@@ -12,9 +12,9 @@ def main(global_config, **settings):
 
     # Modified from the pyramid cookbook
     # Generate persistence objects
-    db_uri = kw_config.get('mongo','mongo_server')
-    db_port = kw_config.getint('mongo','mongo_port')
-    db_name = kw_config.get('mongo','traffic_db')
+    db_uri = 'localhost'
+    db_port = 27017
+    db_name = "traffic1"
     conn = pymongo.Connection(db_uri, db_port)
     db = conn[db_name]
 
