@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>KnightWatch Traffic</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+  <meta name="description" content="The KnightWatch Traffic Console" />
+  <link rel="shortcut icon" href="${request.static_url('trafmongo:static/favicon.ico')}" />
+  <script src="${request.static_url('trafmongo:static/js/jquery-1.7.1.min.js')}"></script>
+  <script src="${request.static_url('trafmongo:static/js/underscore-min.js')}"></script>
+  <script src="${request.static_url('trafmongo:static/js/backbone.js')}"></script>
+  <script src="${request.static_url('trafmongo:static/js/jquery.contextMenu.js')}"></script>
+  <script src="${request.static_url('trafmongo:static/js/d3.v2.js')}"></script>
+</head>
+<body>
+</body>
+</html>

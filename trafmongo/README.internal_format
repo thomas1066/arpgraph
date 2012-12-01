@@ -1,0 +1,42 @@
+There are a variety of elements that may be part of the options dictionary.
+This document describes each option, and it's use cases.
+
+The options dictionary is used as input for a command constructor.  As such,
+producers and manipulators of options dictionaries include the parsers, as well
+as the command factories.  Each key in the dictionary is used as an attribute
+on the command, as in the following code:
+
+for name, value in options.iteritems():
+    setattr(self, name, value)
+
+To accommodate this, the various members of the inheritance tree will typically
+setup attributes by way of the @property technique. 
+
+The options:
+    db:            The pymongo database object.
+
+    timeframe:     For TrafficQueryCommands, a Timeframe object.
+
+    filters:       For TrafficQueryCommands, a TrafficFilterList object.
+
+    hostip:        For HostnameLookupCommands, an int representing an IP
+                   address. (Should support IPv4 and IPv6)
+
+    db_segment:    For TrafficQueryCommands, a db_schema.DB_SEGMENTS segment.
+                   Corresponds to TCP, UDP, ICMP, non-IP, etc
+
+    bucket_size:   For timeseries queries, the command will typically have to
+                   know the needed data pitch.  An int.
+    
+    groupby:       For traffic table queries, the command needs to know what
+                   each row in the table should represent.  Should be a list of
+                   database headers. (Ex: ['ip1', 'ip2', 'p2'])
+
+    sortby:        For traffic table queries, Which columns should be sorted
+                   by, and in which order.
+    
+    fields:        For traffic table queries, which columns (in addition to the
+                   groupby fields) should be returns.  An array of strings. (Ex:
+                   ['count', 'b1', 'b2']) See the 'Aggregate' mixins for more info.
+    
+    Subcommands:   For MultiCommands, an array of commands to be run
