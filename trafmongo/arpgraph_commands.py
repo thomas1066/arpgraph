@@ -67,5 +67,5 @@ class ARPGraphCommandFactory(CommandFactoryABS):
         self._options = options
 
     def create_command(self):
-        return ARPGraphCommand(options)
+        return ARPGraphCommand(self._options)
 

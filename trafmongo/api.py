@@ -21,10 +21,10 @@ def ARPGraphView(context, request):
     # Parse user input
     #options = parser.parse(request)
     options = request.GET
-    options['db'] = context.db
+    #options['db'] = context.db
 
     # Build and run command
-    factory = ARPGraphDataCommandFactory(options)
+    factory = ARPGraphCommandFactory(options)
     command = factory.create_command()
     command.execute()
 

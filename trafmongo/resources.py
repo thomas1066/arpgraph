@@ -26,7 +26,7 @@ class API(BaseResource):
     Ajax API. (Not really REST)
     /api
     """
-    subresources = {"arpviz": ARPGraphData}
+    subresources = {"arpgraph": ARPGraphData}
 
 class ARPViz(BaseResource):
     """
