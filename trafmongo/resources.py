@@ -16,9 +16,9 @@ class BaseResource(object):
     def __getitem__(self, nextpath):
         return self.subresources[nextpath](self.request)
 
-class ARPVizData(BaseResource):
+class ARPGraphData(BaseResource):
     """
-    /api/arpviz
+    /api/arpgraph
     """
 
 class API(BaseResource):
@@ -26,7 +26,7 @@ class API(BaseResource):
     Ajax API. (Not really REST)
     /api
     """
-    subresources = {"arpviz": ARPVizData}
+    subresources = {"arpviz": ARPGraphData}
 
 class ARPViz(BaseResource):
     """

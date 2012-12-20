@@ -1,10 +1,8 @@
 from pyramid.view import view_config
 from trafmongo import resources 
-from trafmongo.parse import TrafficTimeseriesParser, TrafficTableParser, HostByIPParser
+#from trafmongo.parse import TrafficTimeseriesParser, TrafficTableParser, HostByIPParser
 from trafmongo.db_schema import Timeframe, HotDataFormat
-from trafmongo.traffic_commands import InOutTimeseriesCommandFactory, TrafficTableCommandFactory, MultiTrafficDataCommandFactory
-from trafmongo.nmi_commands import HostByIPCommandFactory
-from trafmongo.report_commands import GetReportsCommandFactory
+from trafmongo.arpgraph_commands import ARPGraphCommandFactory
 
 #XXX: These were to be classes, but Python 2.5 doesn't support class decorators
 #class PyramidView(object):
@@ -15,8 +13,8 @@ from trafmongo.report_commands import GetReportsCommandFactory
 #    def __call__(self):
 #        return NotImplementedError
 
-@view_config(name='', renderer='json', context=resources.ARPVizData)
-def BytesTimeseriesView(context, request):
+@view_config(name='', renderer='json', context=resources.ARPGraphData)
+def ARPGraphView(context, request):
     #parser = TrafficTimeseriesParser()
     #subfactory = InOutTimeseriesCommandFactory
 
@@ -26,7 +24,7 @@ def BytesTimeseriesView(context, request):
     options['db'] = context.db
 
     # Build and run command
-    factory = ARPVizDataCommandFactory(options)
+    factory = ARPGraphDataCommandFactory(options)
     command = factory.create_command()
     command.execute()
 

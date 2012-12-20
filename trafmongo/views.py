@@ -10,6 +10,6 @@ def root(context, request):
     return HTTPFound(location="/arpviz")
 
 @view_config(name='', renderer='trafmongo:templates/arpviz.pt',
-             context=resources.ARPVizPage)
+             context=resources.ARPViz)
 def arpvizpage(context, request):
-    return { 'sentry_short_name': request.registry.settings['sentry_short_name'] }
+    return {}
