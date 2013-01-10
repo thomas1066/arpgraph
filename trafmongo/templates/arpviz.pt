@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>KnightWatch Traffic</title>
+  <title>Thomas's Project</title>
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
   <meta name="description" content="The KnightWatch Traffic Console" />
   <link rel="shortcut icon" href="${request.static_url('trafmongo:static/favicon.ico')}" />
@@ -10,7 +10,20 @@
   <script src="${request.static_url('trafmongo:static/js/backbone.js')}"></script>
   <script src="${request.static_url('trafmongo:static/js/jquery.contextMenu.js')}"></script>
   <script src="${request.static_url('trafmongo:static/js/d3.v2.js')}"></script>
+  <script src="${request.static_url('trafmongo:static/js/bootstrap.js')}"></script>
+  <link rel="stylesheet" href="${request.static_url('trafmongo:static/css/bootstrap.css')}" type="text/css" media="screen" charset="utf-8"/>
+  
 </head>
 <body>
+<div class="navbar">
+  <div class="navbar-inner">
+    <a class="brand" href="#">Title</a>
+    <ul class="nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Link</a></li>
+      <li><a href="#">Link</a></li>
+    </ul>
+  </div>
+</div>
 </body>
 </html>
