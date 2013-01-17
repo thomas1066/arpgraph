@@ -9,8 +9,9 @@
   <script src="${request.static_url('trafmongo:static/js/underscore-min.js')}"></script>
   <script src="${request.static_url('trafmongo:static/js/backbone.js')}"></script>
   <script src="${request.static_url('trafmongo:static/js/jquery.contextMenu.js')}"></script>
-  <script src="${request.static_url('trafmongo:static/js/d3.v2.js')}"></script>
+  <script src="${request.static_url('trafmongo:static/js/d3.v3.js')}"></script>
   <script src="${request.static_url('trafmongo:static/js/bootstrap.js')}"></script>
+  <script src="${request.static_url('trafmongo:static/js/graph.js')}"></script>
   <link rel="stylesheet" href="${request.static_url('trafmongo:static/css/bootstrap.css')}" type="text/css" media="screen" charset="utf-8"/>
   
 </head>
@@ -65,11 +66,8 @@
   </div>
 </div>
 
-
-
-
-
-
+<div id="graph">
+</div>
 
 </body>
 </html>
