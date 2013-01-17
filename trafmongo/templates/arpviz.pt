@@ -25,5 +25,55 @@
     </ul>
   </div>
 </div>
+
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span2">
+	 <p>
+	         <button class="btn" type="button">Option 1</button>
+		 <br/>
+	 	 <br/>
+		 <button class="btn" type="button">Option 2</button>
+		 <br/>
+		 <br/>
+		 <button class="btn" type="button">Option 3</button>
+		 <br/>
+		 <br/>
+		<input type="text" placeholder="IP Address">
+	</p>
+     </div>
+    <div class="span10">
+<table class="table table-condensed">
+ <caption>Example table</caption>
+  <thead>
+    <tr>
+      <th>IP Address</th>
+      <th>Connected Hosts</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>127.0.0.1</td>
+      <td>192.168.1.1</td>
+    </tr>
+    <tr>
+	<td>10.3.122.134</td>
+	<td>127.0.0.1</td>
+  </tbody>
+</table>	
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
 </body>
 </html>
+
+
+
+
