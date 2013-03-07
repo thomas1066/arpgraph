@@ -25,11 +25,12 @@ $(function() {
             .attr("class", "link")
             .style("stroke-width", function(d) { return Math.sqrt(d.value); });
 
-        var node = svg.selectAll("circle.node")
+        var node = svg.selectAll("rect.node")
             .data(graph.nodes)
-          .enter().append("circle")
+          .enter().append("rect")
             .attr("class", "node")
-            .attr("r", 5)
+	    .attr("width", "40")
+	    .attr("height", "40")
             .style("fill", function(d) { return color(d.group); })
             .call(force.drag);
     
@@ -42,8 +43,8 @@ $(function() {
                 .attr("x2", function(d) { return d.target.x; })
                 .attr("y2", function(d) { return d.target.y; });
     
-            node.attr("cx", function(d) { return d.x; })
-                .attr("cy", function(d) { return d.y; });
+            node.attr("x", function(d) { return d.x-20; })
+                .attr("y", function(d) { return d.y-20; });
         });
     });
 });
