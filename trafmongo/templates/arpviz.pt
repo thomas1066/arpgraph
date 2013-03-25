@@ -13,7 +13,13 @@
   <script src="${request.static_url('trafmongo:static/js/bootstrap.js')}"></script>
   <script src="${request.static_url('trafmongo:static/js/graph.js')}"></script>
   <link rel="stylesheet" href="${request.static_url('trafmongo:static/css/bootstrap.css')}" type="text/css" media="screen" charset="utf-8"/>
-  
+
+<style>
+.link {
+    stroke: rgb(41, 39, 39);
+}
+</style> 
+ 
 </head>
 <body>
 <div class="navbar">

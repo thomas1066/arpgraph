@@ -1,0 +1,28 @@
+{
+'nodes':[
+	{'name':'00:1e:37:d2:f1:55'}, 
+	{'name':'00:13:10:1a:a2:88'}, 
+	{'name':'00:1e:37:da:ae:7b'}, 
+	{'name':'00:00:86:4c:ba:40'}, 
+	{'name':'bc:5f:f4:68:56:3b'}, 
+	{'name':'00:21:5a:1f:cf:04'}, 
+	{'name':'00:24:1d:29:9a:f5'}, 
+	{'name':'1c:c1:de:61:c4:2d'}, 
+	{'name':'00:24:7e:6a:10:55'},
+	{'name':'00:0e:c6:87:72:e7'}, 
+	{'name':'00:21:86:9f:e1:ca'}
+],
+'links':[
+	{'value': 16309, 'source': 1, 'target': 4}, 
+	{'value': 5622, 'source': 1, 'target': 2}, 
+	{'value': 8459, 'source': 1, 'target': 7}, 
+	{'value': 11761, 'source': 3, 'target': 1}, 
+	{'value': 22, 'source': 1, 'target': 10}, 
+	{'value': 8030, 'source': 1, 'target': 5}, 
+	{'value': 8, 'source': 1, 'target': 8}, 
+	{'value': 12176, 'source': 1, 'target': 6}, 
+	{'value': 10524, 'source': 1, 'target': 0}, 
+	{'value': 3263, 'source': 9, 'target': 1}
+	]
+}
+

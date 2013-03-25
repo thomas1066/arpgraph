@@ -13,7 +13,7 @@ $(function() {
         .attr("width", width)
         .attr("height", height);
 
-    d3.json("/static/graph.json", function(error, graph) {
+    d3.json("/static/test.json", function(error, graph) {
         force
             .nodes(graph.nodes)
             .links(graph.links)
@@ -31,7 +31,7 @@ $(function() {
             .attr("class", "node")
 	    .attr("width", "40")
 	    .attr("height", "40")
-            .style("fill", function(d) { return color(d.group); })
+            .style("fill", function(d) { return "blue"; })
             .call(force.drag);
     
         node.append("title")
