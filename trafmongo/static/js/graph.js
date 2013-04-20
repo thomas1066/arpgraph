@@ -13,7 +13,7 @@ $(function() {
         .attr("width", width)
         .attr("height", height);
 
-    d3.json("/static/test2.json", function(error, graph) {
+    d3.json("/static/whohas.json", function(error, graph) {
         force
             .nodes(graph.nodes)
             .links(graph.links)
